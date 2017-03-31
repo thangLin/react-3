@@ -189,7 +189,7 @@ class ListItem extends Component{
         )
     }
 }
-ajax("../data.txt",'get',true,'',function(datas){
+ajax("./data.txt",'get',true,'',function(datas){
     data = JSON.parse(datas); 
     ReactDom.render(
         <App oData = {data}/>,

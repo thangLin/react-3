@@ -24495,7 +24495,7 @@ var ListItem = function (_Component4) {
     return ListItem;
 }(_react.Component);
 
-ajax("../data.txt", 'get', true, '', function (datas) {
+ajax("./data.txt", 'get', true, '', function (datas) {
     data = JSON.parse(datas);
     _reactDom2.default.render(_react2.default.createElement(App, { oData: data }), document.getElementById('demo'));
 });
